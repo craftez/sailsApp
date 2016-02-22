@@ -33,5 +33,10 @@
     "url": "git://github.com/eddie/sailsApp.git"
   },
   "author": "eddie",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "grunt-sass": "^1.1.0",
+    "node-bourbon": "^4.2.3",
+    "node-neat": "^1.7.2"
+  }
 }
