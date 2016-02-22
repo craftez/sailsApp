@@ -11,6 +11,13 @@
 
 module.exports.bootstrap = function(cb) {
 
+  // Copy all items
+  // Event.find().exec(function (err, events) {
+  //   EventNew.create(events).exec(function (err, created) {
+  //     console.log(created);
+  //   });
+  // });
+
   // It's very important to trigger this callback method when you are finished
   // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
   cb();

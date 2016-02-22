@@ -32,9 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: false
-  }
+  // '/': {
+  //   view: false
+  // }
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +45,9 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-
+  '/': 'HomeController.showHomePage',
+  'GET /signin': { view: 'signin' },
+  'POST /signin': 'UsersController.signin',
+  'GET /event/find': 'EventController.find',
+  'POST /event/create': 'EventController.create'
 };
